@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RollIt! Board Game Store</title>
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <span class="brand-dice">🎲</span>
+        <span class="brand-name">RollIt!</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deals">Deals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <div class="search-wrap">
+            <input type="text" class="search-input" placeholder="Search games…"/>
+            <i class="bi bi-search search-icon"></i>
+          </div>
+          <button class="btn btn-cart position-relative">
+            <i class="bi bi-bag-heart-fill"></i>
+            <span class="cart-badge">3</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======== HERO ======== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-shapes">
+      <span class="shape shape-1">🎯</span>
+      <span class="shape shape-2">♟️</span>
+      <span class="shape shape-3">🃏</span>
+      <span class="shape shape-4">🎲</span>
+      <span class="shape shape-5">⭐</span>
+      <span class="shape shape-6">🏆</span>
+    </div>
+    <div class="container">
+      <div class="row align-items-center min-vh-85">
+        <div class="col-lg-6 hero-content">
+          <div class="hero-badge">🎉 New Arrivals Just Dropped!</div>
+          <h1 class="hero-title">Level Up<br/><span class="title-accent">Game Night</span></h1>
+          <p class="hero-subtitle">From epic strategy wars to hilarious party games — find your next obsession. Free shipping on orders over $45.</p>
+          <div class="hero-cta d-flex flex-wrap gap-3">
+            <a href="#featured" class="btn btn-primary-custom">Shop Now <i class="bi bi-arrow-right ms-1"></i></a>
+            <a href="#categories" class="btn btn-outline-custom">Browse Categories</a>
+          </div>
+          <div class="hero-stats d-flex gap-4 mt-4">
+            <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Games</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">50K+</span><span class="stat-label">Players</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Rated</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center hero-img-col">
+          <div class="hero-box-stack">
+            <div class="game-box box-back">
+              <div class="box-inner box-3">
+                <span>🏰</span>
+                <p>Dominion</p>
+              </div>
+            </div>
+            <div class="game-box box-mid">
+              <div class="box-inner box-2">
+                <span>🌍</span>
+                <p>Ticket to Ride</p>
+              </div>
+            </div>
+            <div class="game-box box-front">
+              <div class="box-inner box-1">
+                <span>🎲</span>
+                <p>Catan</p>
+                <small>Bestseller</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-main)"/></svg>
+    </div>
+  </section>
+
+  <!-- ======== MARQUEE ======== -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>🎲 Free Shipping Over $45</span>
+      <span>♟️ New Arrivals Weekly</span>
+      <span>🃏 Gift Wrapping Available</span>
+      <span>🏆 Loyalty Points on Every Order</span>
+      <span>🎯 Expert Game Recommendations</span>
+      <span>⭐ 30-Day Easy Returns</span>
+      <span>🎲 Free Shipping Over $45</span>
+      <span>♟️ New Arrivals Weekly</span>
+      <span>🃏 Gift Wrapping Available</span>
+      <span>🏆 Loyalty Points on Every Order</span>
+    </div>
+  </div>
+
+  <!-- ======== CATEGORIES ======== -->
+  <section class="section-pad" id="categories">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Browse by Type</span>
+        <h2 class="section-title">Find Your Game Style</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="category-card" data-cat="strategy">
+            <div class="cat-icon">♟️</div>
+            <h6>Strategy</h6>
+            <span class="cat-count">142 games</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="category-card" data-cat="party">
+            <div class="cat-icon">🎉</div>
+            <h6>Party</h6>
+            <span class="cat-count">98 games</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="category-card" data-cat="family">
+            <div class="cat-icon">👨‍👩‍👧‍👦</div>
+            <h6>Family</h6>
+            <span class="cat-count">115 games</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="category-card" data-cat="rpg">
+            <div class="cat-icon">🧙‍♂️</div>
+            <h6>RPG / Adventure</h6>
+            <span class="cat-count">74 games</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="category-card" data-cat="card">
+            <div class="cat-icon">🃏</div>
+            <h6>Card Games</h6>
+            <span class="cat-count">89 games</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="category-card" data-cat="coop">
+            <div class="cat-icon">🤝</div>
+            <h6>Co-op</h6>
+            <span class="cat-count">56 games</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FEATURED GAMES ======== -->
+  <section class="section-pad section-alt" id="featured">
+    <div class="container">
+      <div class="section-header d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+        <div>
+          <span class="section-tag">Handpicked for You</span>
+          <h2 class="section-title mb-0">Featured Games</h2>
+        </div>
+        <div class="filter-tabs d-flex gap-2 flex-wrap">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="bestseller">Bestsellers</button>
+          <button class="filter-btn" data-filter="new">New</button>
+          <button class="filter-btn" data-filter="sale">On Sale</button>
+        </div>
+      </div>
+      <div class="row g-4" id="gamesGrid">
+
+        <!-- Game Card 1 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="bestseller">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#FFF0E0">
+              <span class="game-emoji">🌾</span>
+              <div class="badge-tag bg-warning text-dark">Bestseller</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Strategy</span><span>2-4 Players</span></div>
+              <h5 class="game-name">Catan</h5>
+              <div class="game-rating">★★★★★ <small>(2.4k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$44.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 2 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="new">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#E8F5E9">
+              <span class="game-emoji">🚂</span>
+              <div class="badge-tag bg-success text-white">New</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Family</span><span>2-5 Players</span></div>
+              <h5 class="game-name">Ticket to Ride</h5>
+              <div class="game-rating">★★★★★ <small>(1.8k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$49.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 3 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="sale bestseller">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#F3E5F5">
+              <span class="game-emoji">🔦</span>
+              <div class="badge-tag bg-danger text-white">Sale</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Co-op</span><span>2-5 Players</span></div>
+              <h5 class="game-name">Pandemic</h5>
+              <div class="game-rating">★★★★☆ <small>(3.1k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$34.99</span>
+                <span class="game-price-old">$44.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 4 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="new">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#E3F2FD">
+              <span class="game-emoji">🗺️</span>
+              <div class="badge-tag bg-info text-white">New</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Strategy</span><span>1-4 Players</span></div>
+              <h5 class="game-name">Azul</h5>
+              <div class="game-rating">★★★★★ <small>(980)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$39.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 5 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="bestseller">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#FFF9C4">
+              <span class="game-emoji">🐺</span>
+              <div class="badge-tag bg-warning text-dark">Bestseller</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Party</span><span>5-10 Players</span></div>
+              <h5 class="game-name">One Night Werewolf</h5>
+              <div class="game-rating">★★★★☆ <small>(2.2k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$19.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 6 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="sale">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#FCE4EC">
+              <span class="game-emoji">🏰</span>
+              <div class="badge-tag bg-danger text-white">Sale</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>RPG</span><span>2-6 Players</span></div>
+              <h5 class="game-name">Dominion</h5>
+              <div class="game-rating">★★★★★ <small>(1.5k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$28.99</span>
+                <span class="game-price-old">$39.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 7 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="new">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#E8EAF6">
+              <span class="game-emoji">🌌</span>
+              <div class="badge-tag bg-success text-white">New</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Strategy</span><span>1-4 Players</span></div>
+              <h5 class="game-name">Wingspan</h5>
+              <div class="game-rating">★★★★★ <small>(4.1k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$59.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 8 -->
+        <div class="col-sm-6 col-lg-3 game-item" data-tags="bestseller">
+          <div class="game-card">
+            <div class="game-card-img" style="background:#E0F7FA">
+              <span class="game-emoji">💀</span>
+              <div class="badge-tag bg-warning text-dark">Bestseller</div>
+              <div class="quick-actions">
+                <button class="qa-btn" title="Wishlist"><i class="bi bi-heart"></i></button>
+                <button class="qa-btn" title="Quick View"><i class="bi bi-eye"></i></button>
+              </div>
+            </div>
+            <div class="game-card-body">
+              <div class="game-meta"><span>Card</span><span>2-5 Players</span></div>
+              <h5 class="game-name">Exploding Kittens</h5>
+              <div class="game-rating">★★★★☆ <small>(3.7k)</small></div>
+              <div class="game-footer">
+                <span class="game-price">$24.99</span>
+                <button class="btn btn-add-cart"><i class="bi bi-bag-plus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-outline-custom btn-lg">View All 500+ Games <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DEALS BANNER ======== -->
+  <section class="deals-banner" id="deals">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7">
+          <span class="section-tag" style="color:var(--accent-yellow)">Limited Time</span>
+          <h2 class="deals-title">Weekend Sale<br/><span>Up to 40% Off!</span></h2>
+          <p>Stock up on fan favourites. Use code <strong>GAMENIGHT</strong> at checkout for an extra 10% off.</p>
+          <a href="#featured" class="btn btn-primary-custom mt-2">Grab the Deals</a>
+        </div>
+        <div class="col-lg-5">
+          <div class="countdown-wrapper d-flex gap-3 justify-content-center flex-wrap">
+            <div class="countdown-box"><span id="cd-h" class="cd-num">12</span><span class="cd-label">Hours</span></div>
+            <div class="countdown-box"><span id="cd-m" class="cd-num">34</span><span class="cd-label">Minutes</span></div>
+            <div class="countdown-box"><span id="cd-s" class="cd-num">00</span><span class="cd-label">Seconds</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== WHY US ======== -->
+  <section class="section-pad" id="why-us">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Why RollIt?</span>
+        <h2 class="section-title">More Than Just a Store</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h5>Fast Shipping</h5>
+            <p>Same-day dispatch on orders before 2pm. Free delivery on orders over $45.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">🎁</div>
+            <h5>Gift Ready</h5>
+            <p>Complimentary gift wrapping and personalised notes on every order.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h5>Expert Picks</h5>
+            <p>Our team of game fanatics test and review every title we sell.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h5>Easy Returns</h5>
+            <p>Not happy? Return within 30 days, no questions asked.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TESTIMONIALS ======== -->
+  <section class="section-pad section-alt">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Happy Players</span>
+        <h2 class="section-title">What Our Community Says</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"RollIt has completely transformed our family game nights. The recommendations are spot on and delivery is lightning fast!"</p>
+            <div class="reviewer"><span class="reviewer-avatar">👩</span><div><strong>Sarah K.</strong><small>Family gamer</small></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card review-featured">
+            <div class="review-stars">★★★★★</div>
+            <p>"I've bought from many stores but RollIt blows them all out of the water. Huge selection, great prices, and they actually know their games."</p>
+            <div class="reviewer"><span class="reviewer-avatar">👨</span><div><strong>Marcus T.</strong><small>Strategy enthusiast</small></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>"Gift wrapped Wingspan for my partner — it arrived beautifully packaged. Will 100% shop here again. Amazing experience!"</p>
+            <div class="reviewer"><span class="reviewer-avatar">🧑</span><div><strong>Jamie L.</strong><small>Casual gamer</small></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== NEWSLETTER ======== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box text-center">
+        <span class="nl-emoji">📬</span>
+        <h2>Get Game Night Inspiration</h2>
+        <p>Weekly deals, new arrivals, and game guides — straight to your inbox.</p>
+        <form class="nl-form d-flex gap-2 justify-content-center flex-wrap mt-3" onsubmit="return false;">
+          <input type="email" class="nl-input" placeholder="your@email.com"/>
+          <button type="submit" class="btn btn-primary-custom">Subscribe</button>
+        </form>
+        <small class="mt-2 d-block" style="opacity:.7">No spam. Unsubscribe anytime.</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT ======== -->
+  <section class="section-pad" id="contact">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">We'd Love to Hear from You</h2>
+      </div>
+      <div class="row g-5 justify-content-center">
+        <div class="col-lg-5">
+          <div class="contact-info">
+            <div class="contact-item"><i class="bi bi-geo-alt-fill"></i><div><strong>Visit Us</strong><p>42 Boardwalk Ave, Game City, CA 90210</p></div></div>
+            <div class="contact-item"><i class="bi bi-telephone-fill"></i><div><strong>Call Us</strong><p>+1 (800) ROLL-IT</p></div></div>
+            <div class="contact-item"><i class="bi bi-envelope-fill"></i><div><strong>Email Us</strong><p>hello@rollit.store</p></div></div>
+            <div class="contact-item"><i class="bi bi-clock-fill"></i><div><strong>Hours</strong><p>Mon–Sat: 9am–8pm · Sun: 10am–6pm</p></div></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="contact-form" onsubmit="return false;">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <input type="text" class="form-control custom-input" placeholder="Your Name"/>
+              </div>
+              <div class="col-sm-6">
+                <input type="email" class="form-control custom-input" placeholder="Your Email"/>
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control custom-input" placeholder="Subject"/>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control custom-input" rows="4" placeholder="Your message…"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary-custom w-100">Send Message <i class="bi bi-send ms-1"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand d-flex align-items-center gap-2 mb-3">
+            <span>🎲</span>
+            <span class="brand-name">RollIt!</span>
+          </div>
+          <p class="footer-desc">Your ultimate destination for board games. Bringing people together one game at a time since 2015.</p>
+          <div class="social-links d-flex gap-2 mt-3">
+            <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Shop</h6>
+          <ul class="footer-links">
+            <li><a href="#">All Games</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Bestsellers</a></li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Help</h6>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Company</h6>
+          <ul class="footer-links">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Affiliates</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="footer-heading">Payment</h6>
+          <div class="payment-icons d-flex flex-wrap gap-2">
+            <span class="pay-icon">💳</span>
+            <span class="pay-icon">🅿️</span>
+            <span class="pay-icon">🍎</span>
+            <span class="pay-icon">G</span>
+          </div>
+          <div class="mt-3">
+            <h6 class="footer-heading">App</h6>
+            <a href="#" class="app-badge">📱 iOS App</a>
+            <a href="#" class="app-badge mt-1">🤖 Android App</a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr"/>
+      <div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <p class="mb-0">&copy; 2025 RollIt! Board Game Store. All rights reserved.</p>
+        <div class="d-flex gap-3">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="cartToast" class="toast align-items-center border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">🛒 Added to your bag!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
